@@ -1,0 +1,113 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+:root {
+  --bg: #f7fafc;
+  --text: #1a202c;
+  --accent: #2b6cb0;
+}
+body.dark {
+  --bg: #222831;
+  --text: #eeeeee;
+  --accent: #48a9fe;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: var(--accent);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav .logo {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+}
+nav ul li {
+  margin: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+#theme-toggle {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin-left: 1em;
+}
+section {
+  max-width: 700px;
+  margin: 2.5em auto 2em auto;
+  padding: 0 1em;
+}
+h1, h2 {
+  color: var(--accent);
+}
+.skills-list div {
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+}
+#experience ul {
+  padding-left: 1.2em;
+}
+#hero {
+  text-align: center;
+  margin-top: 3em;
+}
+#hero .links a {
+  margin: 0 8px;
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: underline;
+}
+form {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+form input, form textarea {
+  padding: 8px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+form button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8em;
+    background: var(--accent);
+    position: absolute;
+    top: 56px; left: 0; right: 0;
+    display: none;
+  }
+  nav ul.open {
+    display: flex;
+  }
+}

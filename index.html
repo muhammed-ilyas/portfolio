@@ -1,100 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Muhammed Ilyas | Senior Java Backend Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Ilyas - Senior Java Backend Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav id="navbar">
-    <div class="logo">Muhammed Ilyas</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="theme-toggle">🌗</button>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>MI</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-  <section id="hero">
-    <h1>Senior Java Backend Engineer</h1>
-    <h2>Spring Boot | Kafka | Microservices</h2>
-    <p>
-      8+ years' experience architecting scalable, event-driven microservices.<br>
-      Proven success in performance, cost optimization, and technical leadership.
-    </p>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/shaik-muhammed-ilyas/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/muhammed-ilyas" target="_blank">GitHub</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">MUHAMMED ILYAS</h1>
+                    <p class="hero-subtitle">Senior Java Backend Engineer | Spring Boot | Kafka | Microservices</p>
+                    <p class="hero-description">
+                        Senior Backend Engineer with 8+ years of experience architecting and optimizing scalable, 
+                        event-driven microservices. Proven success driving 20x performance improvements and 
+                        $37.6K+ annual cost savings.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="mailto:9ilyas786@gmail.com" class="btn btn--primary">Get In Touch</a>
+                        <a href="https://www.linkedin.com/in/muhammed-ilyas/" target="_blank" class="btn btn--outline">LinkedIn</a>
+                        <a href="https://github.com/mohammed-ilyas" target="_blank" class="btn btn--outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-placeholder">
+                        <span>MI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      Senior Backend Engineer with 8+ years of experience architecting and optimizing scalable, event-driven microservices using Java, Spring Boot, and cloud technologies. Proven success driving 20x performance improvements, $37.6K+ annual cost savings, and reducing production issues by 90% through innovative solutions, technical leadership, and collaboration.
-    </p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Senior Backend Engineer with over 8 years of experience in architecting and optimizing 
+                        scalable, event-driven microservices using cutting-edge technologies like Java, Spring Boot, 
+                        and cloud platforms.
+                    </p>
+                    <p>
+                        My expertise lies in building resilient, high-performing systems that can handle massive scale. 
+                        I've successfully led development projects supporting 100K+ daily operations while maintaining 
+                        99.5% SLA compliance.
+                    </p>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <h3>20x</h3>
+                            <p>Performance Improvement</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h3>$37.6K+</h3>
+                            <p>Annual Cost Savings</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h3>90%</h3>
+                            <p>Reduction in Production Issues</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Education</h3>
+                            <h4>Bachelor of Technology in Electronics</h4>
+                            <p>G Pullaiah College of Engineering and Technology</p>
+                            <p>2016 • 77.6% CGPA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-list">
-      <div>
-        <b>Languages:</b> Java (Expert), SQL (Proficient), JavaScript (Familiar)
-      </div>
-      <div>
-        <b>Frameworks:</b> Spring Boot, WebFlux, Cloud Stream, Hibernate
-      </div>
-      <div>
-        <b>Databases:</b> PostgreSQL, NoSQL, R2DBC
-      </div>
-      <div>
-        <b>Cloud/DevOps:</b> Azure, Docker, Kubernetes, CI/CD
-      </div>
-      <div>
-        <b>Tools:</b> Git, Postman, Grafana, Visual Studio, Kafka, IntelliJ
-      </div>
-    </div>
-  </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="card__body">
+                                <div class="experience-header">
+                                    <h3>Senior Java Backend Engineer</h3>
+                                    <span class="experience-period">Jul 2022 - Present</span>
+                                </div>
+                                <h4>Current Role</h4>
+                                <ul class="experience-achievements">
+                                    <li>
+                                        Architected and led development of resilient, high-performing microservices 
+                                        supporting 100K+ daily manifests, achieving 99.5% SLA compliance using 
+                                        Java 17, Spring Boot 3.x, and Apache Kafka
+                                    </li>
+                                    <li>
+                                        Orchestrated migration from Azure Event Hub to Retina's proprietary 
+                                        event-driven platform, delivering yearly cost reduction of $37,620
+                                    </li>
+                                    <li>
+                                        Optimized customs submission platform, resulting in 20-fold increase 
+                                        in submission performance and 950% surge in throughput
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="card__body">
+                                <div class="experience-header">
+                                    <h3>IT Analyst, System Engineer</h3>
+                                    <span class="experience-period">Feb 2017 – Jul 2022</span>
+                                </div>
+                                <h4>Tata Consultancy Services</h4>
+                                <ul class="experience-achievements">
+                                    <li>
+                                        Cracked TCS Digital Assessment Test, selected among top 2,000 
+                                        from 30,000+ applicants
+                                    </li>
+                                    <li>
+                                        Developed and maintained enterprise-level applications using 
+                                        Java and Spring framework
+                                    </li>
+                                    <li>
+                                        Collaborated with cross-functional teams to deliver high-quality 
+                                        software solutions
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <ul>
-      <li>
-        <b>Current Role:</b> Architected and led development of high-performing microservices (100K+ daily manifests, 99.5% SLA) <br>
-        <b>Technologies:</b> Java 17, Spring Boot 3.x, Kafka
-      </li>
-      <li>
-        Orchestrated migration from Azure Event Hub to Retina's event platform, saving $37,620 annually.
-      </li>
-      <li>
-        Optimized customs submission platform: 20x faster, 950% throughput boost.
-      </li>
-      <li>
-        <b>IT Analyst, System Engineer | Tata Consultancy Services | Feb 2017 – Jul 2022</b>
-      </li>
-    </ul>
-    <p><b>Education:</b><br>B.Tech. in Electronics, G Pullaiah College of Engineering and Tech (2016) | 77.6% CGPA<br>
-      Cracked TCS Digital Assessment Test: Top 2,000 out of 30,000+
-    </p>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-level expert">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-level proficient">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level familiar">Familiar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring WebFlux</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Cloud Stream</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NoSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R2DBC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Kafka</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Postman</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Grafana</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">IntelliJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="mailto:9ilyas786@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Your Email" required/>
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>
-      Or email: 9ilyas786@gmail.com<br>
-      Phone: +91-8500776646
-    </p>
-  </section>
-  <script src="script.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I'm always interested in discussing new opportunities and innovative projects. 
+                            Feel free to reach out!
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:9ilyas786@gmail.com">9ilyas786@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <a href="tel:+918500776646">+91-8500776646</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Social</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/muhammed-ilyas/" target="_blank" class="btn btn--outline btn--sm">LinkedIn</a>
+                            <a href="https://github.com/mohammed-ilyas" target="_blank" class="btn btn--outline btn--sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Muhammed Ilyas. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/muhammed-ilyas/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/mohammed-ilyas" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
